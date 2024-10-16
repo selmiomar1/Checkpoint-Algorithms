@@ -1,0 +1,24 @@
+Algorithme analyser_phrase(phrase)
+    Déclarer longueur, nombre_de_mots, nombre_de_voyelles : entiers
+    Déclarer voyelles : chaîne de caractères
+    
+    Initialiser longueur à 0
+    Initialiser nombre_de_mots à 0
+    Initialiser nombre_de_voyelles à 0
+    
+    Définir voyelles comme "aeiouyAEIOUY"
+    
+    Pour chaque caractère dans la phrase
+        Augmenter longueur de 1
+        Si le caractère est dans voyelles alors
+            Augmenter nombre_de_voyelles de 1
+        Si le caractère est un espace et le caractère suivant n'est pas un espace alors
+            Augmenter nombre_de_mots de 1
+    
+    Si la phrase se termine par un point alors
+        Augmenter nombre_de_mots de 1
+    
+    Afficher "Longueur de la phrase : " et longueur
+    Afficher "Nombre de mots : " et nombre_de_mots
+    Afficher "Nombre de voyelles : " et nombre_de_voyelles
+Fin algorithme
